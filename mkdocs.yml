@@ -1,0 +1,28 @@
+site_name: QuantumLeap
+site_url: https://quantumleap.readthedocs.org
+site_description: A NGSI to TSDB adapter to allow processing of Historical Data.
+repo_url: https://github.com/orchestracities/ngsi-timeseries-api
+edit_uri: 'edit/master/docs/manuals'
+docs_dir: docs/manuals
+theme: readthedocs
+markdown_extensions: [toc,fenced_code]
+extra_css: ["https://www.fiware.org/style/fiware_readthedocs.css", "https://www.fiware.org/style/fiware_readthedocs_core.css"]
+nav:
+  - Home: 'index.md'
+  - 'User & Programmers Manual':
+    - 'Using QuantumLeap': 'user/using.md'
+    - 'Results Pagination': 'user/pagination.md'
+    - 'Troubleshooting': 'user/troubleshooting.md'
+    - 'Contributing': 'user/contributing.md'
+  - 'Installation & Administration Manual':
+    - 'Installing': 'admin/installing.md'
+    - 'Sanity Check': 'admin/check.md'
+    - 'Ports': 'admin/ports.md'
+    - 'Configuration': 'admin/configuration.md'
+    - 'CrateDB': 'admin/crate.md'
+    - 'Timescale': 'admin/timescale.md'
+    - 'Grafana': 'admin/grafana.md'
+    - 'Data-Migration': 'admin/dataMigration.md'
+    - 'Bechmarks': 'admin/benchmarks.md'
+    - 'Telemetry': 'admin/telemetry.md'
+    - 'Work Queue': 'admin/wq.md'

@@ -1,0 +1,12 @@
+# REPO STRUCTURE
+.git
+.cache
+docs/
+env/
+src/translators/plots/
+Dockerfile
+
+# PYTHON FILES
+**__pycache__/
+.pyc
+
