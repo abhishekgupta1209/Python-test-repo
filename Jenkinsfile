@@ -12,7 +12,7 @@ node{
         
            sh 'python3  -m unittest discover ./reporter/tests'
         }
-    } catch(e) {
+     catch(e) {
         build_ok = false
         echo e.toString()  
     }
@@ -21,7 +21,7 @@ node{
         
           sh 'coverage run --source=./reporter/tests -m unittest discover -s ./reporter/tests'
         }
-    } catch(e) {
+    catch(e) {
         build_ok = false
         echo e.toString()  
     }
