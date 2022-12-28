@@ -33,8 +33,9 @@ node{
 //     sh "coverage combine"
     sh 'coverage report'
     sh 'coverage xml'
+      publishCoverage adapters: [jacocoAdapter('coverage.xml')]
+ 
     }
-    publishCoverage adapters: [jacocoAdapter('coverage.xml')]
-  }
+     }
   
 }
