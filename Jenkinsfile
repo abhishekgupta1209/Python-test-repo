@@ -6,7 +6,8 @@ node{
     }
   stage ("Stage 1"){
     sh 'python3 --version'
-    sh 'cd src'
+    sh 'ls'
+    sh 'cd src/'
     sh 'pwd'
     sh 'python3  -m unittest discover reporter/tests'
     sh 'coverage run --source=reporter/tests -m unittest discover -s reporter/tests'
