@@ -7,7 +7,7 @@ node{
   stage ("Stage 1"){
     sh 'python3 --version'
     sh 'ls'
-    dir("src") {
+//     dir("src") {
     sh "pwd"
 //     sh 'python3  -m unittest discover ./reporter/tests'
 //     sh 'coverage run --source=./reporter/tests -m unittest discover -s ./reporter/tests'
@@ -17,7 +17,7 @@ node{
 //     sh "coverage combine"
     sh 'coverage report'
     sh 'coverage xml'
-    }
+    
     publishCoverage adapters: [jacocoAdapter('coverage.xml')]
   }
   
