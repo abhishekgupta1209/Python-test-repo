@@ -6,7 +6,8 @@ node{
     }
   stage ("Stage 1"){
     sh 'python3 --version'
-    sh "echo En18el301157 | sudo -S ./run_tests.sh"
+    sh "echo En18el301157 | sudo -S chmod +x ./run_tests.sh"
+    sh "./run_tests.sh"
     sh 'coverage run --source=./src/tests -m unittest discover -s ./src/tests'
 //     sh "coverage combine"
     sh 'coverage report'
