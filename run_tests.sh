@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 
-rep=$(curl -s --unix-socket /var/run/docker.sock http://ping > /dev/null)
-status=$?
+# rep=$(curl -s --unix-socket /var/run/docker.sock http://ping > /dev/null)
+# status=$?
 
 # if [ $status -eq 7 ]; then
 #     echo 'docker is not running - test will not be executed'
