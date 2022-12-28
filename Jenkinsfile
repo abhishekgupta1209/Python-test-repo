@@ -15,8 +15,8 @@ node{
 //     sh "./run_tests.sh"
 //     sh 'coverage run --source=./src/tests -m unittest discover -s ./src/tests'
 //     sh "coverage combine"
-    sh 'coverage report'
-    sh 'coverage xml'
+//     sh 'coverage report'
+//     sh 'coverage xml'
     
     publishCoverage adapters: [jacocoAdapter('coverage.xml')]
   }
